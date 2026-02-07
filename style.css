@@ -1,0 +1,400 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:system-ui;
+}
+
+body{
+background:#000000;
+color:white;
+overflow-x:hidden;
+}
+
+/* NAV */
+
+
+.nav{
+position:fixed;
+top:0;
+left:0;
+right:0;
+width: 100%;
+
+padding:4px 80px;
+z-index:999;
+
+backdrop-filter:blur(10px);
+}
+
+.nav-inner{
+max-width:1400px;
+margin:auto;
+padding:14px 80px;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+.logo{
+display:flex;
+align-items:center;
+gap:1px;
+font-weight:700;
+margin-left:100px;
+font-size: 25px;
+}
+.logo img{
+margin-top: 3px;
+height: 35px;
+}
+
+.nav-center{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+display:flex;
+gap:32px;
+}
+.nav-center a{
+color:#ccc;
+text-decoration:none;
+}
+
+.nav-right{
+display:flex;
+gap:12px;
+}
+
+/* BUTTONS */
+
+.primary{
+background:white;
+border:none;
+padding:10px 22px;
+border-radius:30px;
+}
+
+.ghost{
+background:transparent;
+border:1px solid #444;
+color:white;
+padding:10px 22px;
+border-radius:30px;
+}
+
+/* HERO */
+
+.hero{
+    padding: 80px 0;
+position:relative;
+padding-bottom:10px;
+overflow:hidden;
+}
+
+/* BACKGROUND */
+
+.bg{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-1;
+}
+
+/* CONTENT */
+
+.hero-content{
+padding-top:40px;
+text-align:center;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+/* BADGE */
+
+.badge{
+background:#00b37a;
+padding:6px 16px;
+border-radius:20px;
+font-size:12px;
+margin-bottom:24px;
+}
+
+/* TITLE */
+
+.hero h1{
+font-size:72px;
+max-width:900px;
+line-height:1.05;
+}
+
+/* TEXT */
+
+.hero p{
+margin-top:24px;
+color:#b6c0cc;
+max-width:540px;
+font-size:18px;
+}
+
+/* EMAIL */
+
+.email{
+margin-top:40px;
+background:rgba(255,255,255,.2);
+backdrop-filter:blur(10px);
+border-radius:40px;
+padding:6px;
+display:flex;
+}
+
+.email input{
+background:none;
+border:none;
+color:white;
+padding:14px 24px;
+width:300px;
+}
+
+.email button{
+background:white;
+border:none;
+padding:12px 28px;
+border-radius:30px;
+}
+
+/* UI IMAGE */
+
+.hero-ui{
+display:block;
+margin:120px auto 0;
+width:1100px;
+max-width:90%;
+border-radius: 20px;
+}
+
+/* LOWER */
+
+/* LOGO SECTION */
+
+.lower {
+  position: relative;
+  padding-top:120px;
+  padding-bottom:100px;
+}
+
+.lower::before {
+  content:"";
+  position:absolute;
+  top:-200px;
+  left:0;
+  right:0;
+  height:300px;
+  background:linear-gradient(to bottom, transparent, #000000 70%);
+  pointer-events:none;
+}
+
+
+/* GRID */
+
+.logo-grid{
+display:grid;
+grid-template-columns:repeat(4, auto);
+justify-content:center;
+align-items:center;
+gap:64px 120px;
+}
+
+/* LOGOS */
+
+.logo-grid img{
+height:35px;  
+width:130px;       
+opacity:0.85;
+filter:brightness(0.95);
+}
+
+.logo-grid img:hover{
+opacity:1;
+}
+
+.intelligence{
+  padding:140px 0px;
+  text-align:center;
+}
+
+.intelligence h2{
+  font-size:44px;
+}
+
+.intel-sub{
+  margin-top:16px;
+  color:#aaa;
+  max-width:700px;
+  margin-inline:auto;
+}
+
+/* GRID */
+
+.intel-grid{
+  margin-top:80px;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:40px;
+}
+
+/* CARD */
+
+.intel-card{
+    width: 100%;
+    max-width: 100%;
+  padding:40px;
+  border-radius:24px;
+  background:rgba(255,255,255,.02);
+  border:1px solid rgba(255,255,255,.08);
+  text-align:left;
+}
+
+.intel-card small{
+  color:#1ee7a1;
+  font-size:12px;
+}
+
+.intel-card h3{
+  margin-top:12px;
+  font-size:24px;
+}
+
+.intel-card p{
+  margin-top:12px;
+  color:#aaa;
+}
+
+/* DOTS */
+
+.dots{
+  margin-top:40px;
+  display:flex;
+  gap:16px;
+}
+
+.dots span{
+  width:44px;
+  height:44px;
+  background:#1ee7a1;
+  border-radius:50%;
+}
+
+/* ASSISTANT */
+
+.assistant-card{
+    width: 100%;
+    max-width: 100%;
+  margin-top:40px;
+  padding:60px;
+  border-radius:32px;
+  background:rgba(255,255,255,.02);
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.assistant-card small{
+  color:#1ee7a1;
+  font-size:12px;
+}
+
+.assistant-card h3{
+  margin-top:12px;
+  font-size:28px;
+}
+
+.assistant-card p{
+  margin-top:12px;
+  color:#aaa;
+}
+
+/* FAKE UI PLACEHOLDER */
+
+.assistant-ui{
+  margin-top:20px;
+  height:160px;
+  border-radius:20px;
+  background:linear-gradient(180deg,#1ee7a122,#000);
+}
+
+
+.final-cta{
+  padding:2px 0px;
+  text-align:center;
+  margin-bottom: 40px;
+}
+
+.final-cta h2{
+  font-size:48px;
+}
+
+.final-cta p{
+  margin-top:16px;
+  color:#aaa;
+}
+
+/* BUTTONS */
+
+.cta-buttons{
+  margin-top:40px;
+  display:flex;
+  justify-content:center;
+  gap:16px;
+}
+
+/* SPLIT AREA */
+
+.cta-split{
+  margin-top:100px;
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  align-items:center;
+}
+
+.divider{
+  width:1px;
+  height:140px;
+  background:rgba(255,255,255,.1);
+}
+
+/* BOX */
+
+.cta-box{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+}
+
+.cta-box h4{
+  font-size:20px;
+}
+
+.cta-box span{
+  color:#aaa;
+}
+
+.cta-box a{
+  margin-top:12px;
+  color:#1ee7a1;
+  text-decoration:none;
+}
+
+/* ICON */
+
+.cta-icon{
+  width:44px;
+  height:44px;
+  border-radius:12px;
+  background:rgba(255,255,255,.05);
+  display:grid;
+  place-items:center;
+  font-size:20px;
+}
